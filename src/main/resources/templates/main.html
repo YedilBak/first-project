@@ -125,7 +125,7 @@
             <td th:text="${car.cost}"></td>
             <td th:text="${car.country}"></td>
             <td th:text="${car.description}"></td>
-            <td style="width: 8%;"><a class="btn btn-sm btn-secondary" href="/">DETAILS</a></td>
+            <td style="width: 8%;"><a class="btn btn-sm btn-secondary"  th:href="@{'/get-car/' + ${car.getId()}}" >DETAILS</a></td>
         </tr>
         </tbody>
     </table>
